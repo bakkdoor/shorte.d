@@ -1,0 +1,12 @@
+{
+	"name": "shorte.d",
+	"description": "Link shortener web service written in D.",
+	"homepage": "https://github.com/bakkdoor/shorted",
+	"copyright": "Copyright © 2013, Christopher Bertels",
+	"authors": [
+		"Christopher Bertels"
+	],
+	"dependencies": {
+    "vibe-d": "~master"
+	}
+}

@@ -80,7 +80,7 @@ void shortenUrl(HTTPServerRequest req, HTTPServerResponse res)
 
 void showUrlInfo(HTTPServerRequest req, HTTPServerResponse res)
 {
-    auto id = req.params["id"];
+    auto id      = req.params["id"];
     auto urlInfo = lookup(id);
 
     res.writeBody(`{ "id": "`~id~`", "url": "`~urlInfo.url~`", "redirects": `~to!string(urlInfo.redirects)~" }" , "text/json");
